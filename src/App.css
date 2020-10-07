@@ -184,7 +184,7 @@ button:active {
 }
 
 /* Mobile phone */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) { */
   #calculator-wrapper {
     width: 336px;
     height: 536px;
@@ -193,7 +193,7 @@ button:active {
     border-radius: 8px;
     box-shadow: none;
   }
-}
+/* } */
 
 /* Very small phone */
 @media (max-width: 320px) {
@@ -203,5 +203,71 @@ button:active {
   #calculator-wrapper {
     height: 100vh;
     width: 100vw;
+  }
+}
+
+nav {
+  background-color: black;
+  overflow: hidden;
+  padding: 1em;
+}
+
+nav a {
+  color: white;
+}
+
+nav a:visited {
+  color: white;
+}
+
+nav .navWide {
+  display: none;
+  margin: 0 auto;
+}
+
+nav .navWide .wideDiv {
+  text-align: center;
+}
+
+nav .navWide .wideDiv a {
+  text-decoration: none;
+  display: inline-block;
+  /*Adjust padding to increase/decrease the space between links.*/
+  padding: 0 2em;
+}
+
+/*Navbar is set to default with the "hamburger" and links on the left
+side of the screen. To move to the right of the screen, simply
+change the three "float: Left;" references to read "float: right;".*/
+nav .navNarrow i {
+  float: left;
+  cursor: pointer;
+  color: white;
+}
+
+nav  {
+  padding: 1em;
+}
+
+nav .navNarrow .narrowLinks a {
+  text-decoration: none;
+  display: block;
+  float: left;
+  clear: left;
+  margin: .75em 0;}
+
+.hidden {
+  display: none;
+}
+
+/*Adjust breakpoint as desired to select when the "hamburger" menu is
+replaced by just the links.*/
+@media (min-width: 480px) {
+  nav .navWide {
+    display: block;
+  }
+
+  nav .navNarrow {
+    display: none;
   }
 }
