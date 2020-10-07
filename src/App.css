@@ -115,12 +115,14 @@ button:active {
 
 .calculator .function-keys {
   display: flex;
+  margin-left: 8px;
 }
 
 .calculator .digit-keys {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap-reverse;
+  margin-left: 8px;
 }
 
 .calculator-key {
