@@ -6,6 +6,7 @@ html {
 }
 
 body {
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   font: 100 14px 'Roboto';
 }
@@ -67,18 +68,17 @@ button:active {
 }
 
 #calculator-wrapper {
+  margin-top: 50px;
   width: 360px;
   height: 560px;
   position: relative;
-  border: 20px solid #1c191c;
-  border-radius: 20px;
   box-shadow: 0px 0px 20px 0px #aaa;
 }
 
 .calculator {
   width: 100%;
   height: 100%;
-  background: black;
+  background: #2e398a;
 
   display: flex;
   flex-direction: column;
@@ -86,7 +86,6 @@ button:active {
 
 .calculator-display {
   color: white;
-  background: #1c191c;
   line-height: 130px;
   font-size: 6em;
 
@@ -119,28 +118,31 @@ button:active {
 }
 
 .calculator .digit-keys {
-  background: #1c191c;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap-reverse;
 }
 
 .calculator-key {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   text-align: center;
   line-height: 60px;
-  border: 8px solid #1c191c;
+  border: 8px solid #2e398a;
   border-radius: 50%;
 }
 .calculator .function-keys .calculator-key {
+  color: white;
   font-size: 1.6em;
 }
 
 .calculator .digit-keys .calculator-key {
   font-size: 2.25em;
-  color: white;
-  background-color: #323232;
+  color: #9fa5cf;
+  background-color: #2e398a;
+  border: 1px solid #6d74ad;
+  margin: 2.5px;
+  margin-top: 5px;
 }
 
 .calculator .digit-keys .key-0 {
@@ -155,16 +157,30 @@ button:active {
 .calculator .operator-keys .calculator-key {
   color: white;
   font-size: 2.2em;
-  background-color: purple;
+  background-color: #fadb4b;
 }
 
-.calculator .function-keys,
-.calculator .operator-keys {
-  background-color: #1c191c;
+.calc-key {
+  width: 75px;
+  height: 75px;
+  text-align: center;
+  line-height: 60px;
+  border: 2px solid #2e398a;
+  border-radius: 50%;
+  margin: 2.5px;
+  margin-bottom: -1px;
 }
+
+/* .calculator .function-keys,
+.calculator .operator-keys {
+} */
 
 .calculator .function-keys .calculator-key {
-  background-color: #b4b4b4;
+  background-color: #2e398a;
+  height: 70px;
+  width: 70px;
+  border: 1px solid #fadb4b;
+  margin: 2.5px;
 }
 
 /* Mobile phone */
@@ -173,7 +189,7 @@ button:active {
     width: 336px;
     height: 536px;
     position: relative;
-    border: 8px solid #1c191c;
+    border: 8px solid #2e398a;
     border-radius: 8px;
     box-shadow: none;
   }

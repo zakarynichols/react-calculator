@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { evaluate } from 'mathjs'; // eval is a reserved word!
-import CalculatorDisplay from './Display';
+import { evaluate } from 'mathjs';
+import Display from './Display';
 
 /* Components */
 const Calculator = () => {
@@ -26,12 +26,13 @@ const Calculator = () => {
     }
 
     const handleOperator = (newKeyValue) => {
-        if (firstOperand === '0' || operator == null || waitingForOperand) { // if not ready to do calculation
+        if (firstOperand === '0' || operator == null || waitingForOperand) {
+            setDisplayValue(`${displayValue}${newKeyValue}`)
             setWaitingForOperand(true);
             setFirstOperand(displayValue);
             setOperator(newKeyValue);
             setClearAll(false);
-            console.log('here')
+            console.log('here');
             return;
         };
 
@@ -39,7 +40,7 @@ const Calculator = () => {
         console.log(stringToEvaluate)
         const newDisplayValue = `${evaluate(stringToEvaluate)}`;
 
-        if (newDisplayValue === "Infinity") { //math.js evaluates division by 0 to be "Infinity"
+        if (newDisplayValue === "Infinity") {
             setDisplayValue('Error');
         };
 
@@ -54,20 +55,21 @@ const Calculator = () => {
     const handlePoint = (newKeyValue) => {
         const needPoint = `${displayValue}`.indexOf('.') === -1 ? true : false;
 
-        if (waitingForOperand) { // allow point if starting on a new operand
+        if (waitingForOperand) {
             setDisplayValue('0');
             setWaitingForOperand(false);
             setClearAll(false);
             return;
         };
 
-        if (needPoint) { //if not inputting new operand, only allow point if it's not already present
+        if (needPoint) {
             setDisplayValue(`${displayValue}${newKeyValue}`);
             setWaitingForOperand(false);
             setClearAll(false);
         };
     }
 
+    // TODO: Fix Percentage.
     const handlePercentage = () => {
         const newDisplayValue = parseFloat(displayValue).toPrecision(maxPrecision) / 100;
 
@@ -100,7 +102,7 @@ const Calculator = () => {
 
 
     const handleKeyPress = (newKeyValue) => {
-        /* don't do anything, just write the error to the console log */
+        /* Don't do anything, just write to the console. */
         console.log('Input Value: ', newKeyValue);
     }
 
@@ -147,14 +149,14 @@ const Calculator = () => {
 
     return (
         <div className="calculator">
-            <CalculatorDisplay value={displayValue} maxPrecision={maxPrecision} />
+            <Display value={displayValue} maxPrecision={maxPrecision} />
 
             <div className="calculator-keypad">
                 <div className="input-keys">
                     <div className="function-keys">
                         <button id="key-clear" value="C" className="calculator-key key-clear" onClick={handleClick}>{clearAll ? 'AC' : 'C'}</button>
                         <button id="key-sign" value="±" className="calculator-key key-sign" onClick={handleClick}>&plusmn;</button>
-                        <button id="key-percent" value="%" className="calculator-key key-percent" onClick={handleClick}>%</button>
+                        {/* <button id="key-percent" value="%" className="calculator-key key-percent" onClick={handleClick}>%</button> */}
                     </div>
 
                     <div className="digit-keys">
@@ -173,11 +175,11 @@ const Calculator = () => {
                 </div>
 
                 <div className="operator-keys">
-                    <button id="key-divide" value="/" className="calculator-key key-divide" onClick={handleClick}>&divide;</button>
-                    <button id="key-multiply" value="*" className="calculator-key key-multiply" onClick={handleClick}>&times;</button>
-                    <button id="key-subtract" value="-" className="calculator-key key-subtract" onClick={handleClick}>&ndash;</button>
-                    <button id="key-add" value="+" className="calculator-key key-add" onClick={handleClick}>+</button>
-                    <button id="key-equals" value="=" className="calculator-key key-equals" onClick={handleClick}>=</button>
+                    <button id="key-divide" value="/" className="calculator-key calc-key key-divide" onClick={handleClick}>&divide;</button>
+                    <button id="key-multiply" value="*" className="calculator-key calc-key key-multiply" onClick={handleClick}>&times;</button>
+                    <button id="key-subtract" value="-" className="calculator-key calc-key key-subtract" onClick={handleClick}>&ndash;</button>
+                    <button id="key-add" value="+" className="calculator-key calc-key key-add" onClick={handleClick}>+</button>
+                    <button id="key-equals" value="=" className="calculator-key calc-key key-equals" onClick={handleClick}>=</button>
                 </div>
             </div>
         </div>
