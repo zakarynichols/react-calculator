@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/firefly-calc-test/static/css/main.4d8b10d5.chunk.css",
+    "main.css": "/firefly-calc-test/static/css/main.c3521e76.chunk.css",
     "main.js": "/firefly-calc-test/static/js/main.24f7b10c.chunk.js",
     "main.js.map": "/firefly-calc-test/static/js/main.24f7b10c.chunk.js.map",
     "runtime-main.js": "/firefly-calc-test/static/js/runtime-main.4cc8f937.js",
@@ -8,15 +8,15 @@
     "static/js/2.acf2a6e4.chunk.js": "/firefly-calc-test/static/js/2.acf2a6e4.chunk.js",
     "static/js/2.acf2a6e4.chunk.js.map": "/firefly-calc-test/static/js/2.acf2a6e4.chunk.js.map",
     "index.html": "/firefly-calc-test/index.html",
-    "precache-manifest.f8c6fa0ce7c89c7c5a8f24050696d400.js": "/firefly-calc-test/precache-manifest.f8c6fa0ce7c89c7c5a8f24050696d400.js",
+    "precache-manifest.563a3598fc312657af4e721a07d285b1.js": "/firefly-calc-test/precache-manifest.563a3598fc312657af4e721a07d285b1.js",
     "service-worker.js": "/firefly-calc-test/service-worker.js",
-    "static/css/main.4d8b10d5.chunk.css.map": "/firefly-calc-test/static/css/main.4d8b10d5.chunk.css.map",
+    "static/css/main.c3521e76.chunk.css.map": "/firefly-calc-test/static/css/main.c3521e76.chunk.css.map",
     "static/js/2.acf2a6e4.chunk.js.LICENSE.txt": "/firefly-calc-test/static/js/2.acf2a6e4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.4cc8f937.js",
     "static/js/2.acf2a6e4.chunk.js",
-    "static/css/main.4d8b10d5.chunk.css",
+    "static/css/main.c3521e76.chunk.css",
     "static/js/main.24f7b10c.chunk.js"
   ]
 }
