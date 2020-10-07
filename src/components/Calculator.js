@@ -2,16 +2,6 @@ import React, { useState } from 'react';
 import { evaluate } from 'mathjs'; // eval is a reserved word!
 import CalculatorDisplay from './Display';
 
-/* Constants */
-
-/* Only 6 characters can be displayed at the optimal full size.
-If the character string is longer, we need to scale the display down */
-const maxCharsAtFullSize = 6;
-const scaleFactor = 'scale(0.36)';
-
-/* Allow maximum of 16 digits afterthe decimal point */
-const maxPrecision = 16;
-
 /* Components */
 const Calculator = () => {
     const [displayValue, setDisplayValue] = useState('0');
@@ -19,6 +9,7 @@ const Calculator = () => {
     const [waitingForOperand, setWaitingForOperand] = useState(false);
     const [firstOperand, setFirstOperand] = useState('0');
     const [clearAll, setClearAll] = useState(true);
+    const maxPrecision = 16;
 
     const handleDigit = (newKeyValue) => {
         if (waitingForOperand) {
