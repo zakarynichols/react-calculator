@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/firefly-calc-test/precache-manifest.084ec975110fa57dd271e389248abee9.js"
+  "/firefly-calc-test/precache-manifest.1d09a122552dd98425283f8f049569a1.js"
 );
 
 self.addEventListener('message', (event) => {
