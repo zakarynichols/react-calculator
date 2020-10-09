@@ -13,8 +13,8 @@ const Navbar = () => {
             <nav>
                 <div className="navWide">
                 </div>
-                <div className="navNarrow" onClick={handleToggle}>
-                    <i className="fa fa-bars fa-3x"></i>
+                <div className="navNarrow">
+                    <i onClick={handleToggle} className="fa fa-bars fa-3x"></i>
                     <div ref={narrowLinks} className="narrowLinks hidden">
                         <Link to="/">Home</Link>
                         <Link to="/">Calculator</Link>

@@ -186,6 +186,7 @@ button:active {
 /* Mobile phone */
 /* @media (max-width: 768px) { */
   #calculator-wrapper {
+    margin-top: 10px;
     width: 345px;
     height: 100%;
     position: relative;
@@ -210,6 +211,8 @@ nav {
   overflow: hidden;
   padding: 1em;
   max-width: 345px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 nav a {
@@ -233,6 +236,10 @@ nav .navNarrow i {
   float: left;
   cursor: pointer;
   color: white;
+}
+
+nav .navNarrow .t {
+  float: right;
 }
 
 /* nav  {
