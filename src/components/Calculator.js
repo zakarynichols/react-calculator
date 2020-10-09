@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { evaluate } from 'mathjs';
 import Display from './Display';
 
-/* Components */
 const Calculator = () => {
     const [displayValue, setDisplayValue] = useState('0');
     const [operator, setOperator] = useState(null);
