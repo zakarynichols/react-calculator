@@ -26,7 +26,7 @@ const CalculatorDisplay = ({ value, maxPrecision }) => {
         scientificNotation = parseFloat(value).toExponential(maxPrecision - 1);
         scientificNotation = scientificNotation.substring(0, scientificNotation.length - 3);
     }
-    
+
     return (
         <div className="calculator-display">
             <div className="auto-scaling-text" style={{ transform: scaleDown }}>

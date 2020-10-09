@@ -26,7 +26,7 @@ const Calculator = () => {
     }
 
     const handleOperator = (newKeyValue) => {
-        if (firstOperand === '0' || operator == null || waitingForOperand) {
+        if (firstOperand === '0' || operator == null || waitingForOperand || displayValue === 'Error') {
             setDisplayValue(`${displayValue}${newKeyValue}`)
             setWaitingForOperand(true);
             setFirstOperand(displayValue);
@@ -37,7 +37,17 @@ const Calculator = () => {
         };
 
         const stringToEvaluate = `${firstOperand}${operator}${displayValue}`;
-        console.log(stringToEvaluate)
+        const res = stringToEvaluate.includes('=');
+
+        if (res === true) {
+            setDisplayValue('0');
+            setFirstOperand('0');
+            setOperator(null);
+            setWaitingForOperand(false);
+            setClearAll(true);
+            return;
+        }
+
         const newDisplayValue = `${evaluate(stringToEvaluate)}`;
 
         if (newDisplayValue === "Infinity") {

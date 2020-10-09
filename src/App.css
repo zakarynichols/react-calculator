@@ -67,21 +67,16 @@ button:active {
   justify-content: center;
 }
 
-#calculator-wrapper {
-  margin-top: 50px;
-  width: 360px;
-  height: 560px;
-  position: relative;
-  box-shadow: 0px 0px 20px 0px #aaa;
-}
+
 
 .calculator {
   width: 100%;
-  height: 100%;
+  height: 550px;
   background: #2e398a;
-
   display: flex;
   flex-direction: column;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .calculator-display {
@@ -104,12 +99,14 @@ button:active {
   position: absolute;
   right: 0;
   transform-origin: right;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .calculator-keypad {
   height: 400px;
-
   display: flex;
+  justify-content: center;
 }
 
 .calculator .input-keys {
@@ -118,14 +115,12 @@ button:active {
 
 .calculator .function-keys {
   display: flex;
-  margin-left: 8px;
 }
 
 .calculator .digit-keys {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap-reverse;
-  margin-left: 8px;
 }
 
 .calculator-key {
@@ -191,12 +186,11 @@ button:active {
 /* Mobile phone */
 /* @media (max-width: 768px) { */
   #calculator-wrapper {
-    width: 336px;
-    height: 536px;
+    width: 345px;
+    height: 100%;
     position: relative;
-    border: 8px solid #2e398a;
-    border-radius: 8px;
-    box-shadow: none;
+    box-shadow: 5px 10px 8px #888888;
+    border-radius: 20px;
   }
 /* } */
 
@@ -212,9 +206,10 @@ button:active {
 }
 
 nav {
-  background-color: black;
+  background-color: #6d74ad;
   overflow: hidden;
   padding: 1em;
+  max-width: 345px;
 }
 
 nav a {
@@ -225,21 +220,11 @@ nav a:visited {
   color: white;
 }
 
-nav .navWide {
-  display: none;
-  margin: 0 auto;
-}
-
-nav .navWide .wideDiv {
-  text-align: center;
-}
-
-nav .navWide .wideDiv a {
+/* nav .navWide .wideDiv a {
   text-decoration: none;
   display: inline-block;
-  /*Adjust padding to increase/decrease the space between links.*/
   padding: 0 2em;
-}
+} */
 
 /*Navbar is set to default with the "hamburger" and links on the left
 side of the screen. To move to the right of the screen, simply
@@ -250,29 +235,19 @@ nav .navNarrow i {
   color: white;
 }
 
-nav  {
+/* nav  {
   padding: 1em;
-}
+} */
 
 nav .navNarrow .narrowLinks a {
   text-decoration: none;
   display: block;
   float: left;
   clear: left;
-  margin: .75em 0;}
+  margin: .75em 0;
+  color: white;
+}
 
 .hidden {
   display: none;
-}
-
-/*Adjust breakpoint as desired to select when the "hamburger" menu is
-replaced by just the links.*/
-@media (min-width: 480px) {
-  nav .navWide {
-    display: block;
-  }
-
-  nav .navNarrow {
-    display: none;
-  }
 }
