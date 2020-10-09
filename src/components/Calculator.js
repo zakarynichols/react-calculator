@@ -46,6 +46,8 @@ const Calculator = () => {
             return;
         };
 
+        console.log(stringToEvaluate)
+
         const newDisplayValue = `${evaluate(stringToEvaluate)}`;
 
         if (newDisplayValue === "Infinity") {
