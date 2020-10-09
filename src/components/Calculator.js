@@ -26,13 +26,12 @@ const Calculator = () => {
     }
 
     const handleOperator = (newKeyValue) => {
-        if (firstOperand === '0' || operator == null || waitingForOperand || displayValue === 'Error') {
+        if (firstOperand === '0' || operator == null || waitingForOperand) {
             setDisplayValue(`${displayValue}${newKeyValue}`)
             setWaitingForOperand(true);
             setFirstOperand(displayValue);
             setOperator(newKeyValue);
             setClearAll(false);
-            console.log('here');
             return;
         };
 
@@ -46,7 +45,7 @@ const Calculator = () => {
             setWaitingForOperand(false);
             setClearAll(true);
             return;
-        }
+        };
 
         const newDisplayValue = `${evaluate(stringToEvaluate)}`;
 
@@ -119,16 +118,16 @@ const Calculator = () => {
     const handleFunctionKey = (newKeyValue) => {
         switch (newKeyValue) {
             case "C":
-                handleClear(newKeyValue);
+                handleClear();
                 break;
             case "±":
-                handlePlusMinusToggle(newKeyValue);
+                handlePlusMinusToggle();
                 break;
             case ".":
                 handlePoint(newKeyValue);
                 break;
             case "%":
-                handlePercentage(newKeyValue);
+                handlePercentage();
                 break;
             default:
                 handleKeyPress(newKeyValue);
@@ -157,6 +156,8 @@ const Calculator = () => {
         }
     }
 
+    console.log(displayValue)
+
     return (
         <div className="calculator">
             <Display value={displayValue} maxPrecision={maxPrecision} />
@@ -166,7 +167,7 @@ const Calculator = () => {
                     <div className="function-keys">
                         <button id="key-clear" value="C" className="calculator-key key-clear" onClick={handleClick}>{clearAll ? 'AC' : 'C'}</button>
                         <button id="key-sign" value="±" className="calculator-key key-sign" onClick={handleClick}>&plusmn;</button>
-                        {/* <button id="key-percent" value="%" className="calculator-key key-percent" onClick={handleClick}>%</button> */}
+                        <button id="key-percent" value="%" className="calculator-key key-percent" onClick={handleClick}>%</button>
                     </div>
 
                     <div className="digit-keys">
