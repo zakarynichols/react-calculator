@@ -4,15 +4,16 @@ import Calculator from './components/Calculator';
 import Navbar from './components/Navbar';
 import About from './components/About';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
-  Route
+  Route,
+  HashRouter
 } from 'react-router-dom';
 
 const App = () => {
 
   return (
-    <Router>
+    <HashRouter>
       <div className="App">
         <div id="wrapper">
           <div id="calculator-wrapper">
@@ -24,7 +25,7 @@ const App = () => {
           </div>
         </div>
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 

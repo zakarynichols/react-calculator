@@ -18,7 +18,7 @@ const Navbar = () => {
                     <div ref={narrowLinks} className="narrowLinks hidden">
                         <Link to="/" onClick={handleToggle}>Home</Link>
                         <Link to="/about" onClick={handleToggle}>About</Link>
-                        <Link to="/about" onClick={handleToggle}>See Code</Link>
+                        <a href="https://github.com/zaknicholsdev/firefly-calc-test" onClick={handleToggle}>See Code</a>
                     </div>
                 </div>
             </nav>
