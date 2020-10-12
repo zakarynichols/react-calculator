@@ -2,10 +2,11 @@
   <a href="https://spdevuk.com">
     <img alt="wave" src="./src/logo.svg" width="100" />
   </a>
-</p>
-<h1 align="center">
+  <h1>
   React Calculator
 </h1>
+</p>
+
 
 Front End Developer Calculator Challenge
 
