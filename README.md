@@ -2,7 +2,7 @@
   <a href="https://spdevuk.com">
     <img alt="wave" src="./src/logo.svg" width="100" />
   </a>
-  <h1>
+  <h1 align="center">
   React Calculator
 </h1>
 </p>
