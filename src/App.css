@@ -258,3 +258,12 @@ nav .navNarrow .narrowLinks a {
 .hidden {
   display: none;
 }
+
+.li-space {
+  padding: 10px;
+}
+
+code {
+  background-color: gray;
+  color: snow;
+}

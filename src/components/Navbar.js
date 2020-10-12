@@ -16,9 +16,9 @@ const Navbar = () => {
                 <div className="navNarrow">
                     <i onClick={handleToggle} className="fa fa-bars fa-3x"></i>
                     <div ref={narrowLinks} className="narrowLinks hidden">
-                        <Link to="/">Home</Link>
-                        <Link to="/about">About</Link>
-                        <Link to="/">See Code</Link>
+                        <Link to="/" onClick={handleToggle}>Home</Link>
+                        <Link to="/about" onClick={handleToggle}>About</Link>
+                        <Link to="/about" onClick={handleToggle}>See Code</Link>
                     </div>
                 </div>
             </nav>

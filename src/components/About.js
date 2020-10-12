@@ -6,9 +6,26 @@ const About = () => {
             <h1>
                 About
             </h1>
-            <p style={{ margin: '50px' }}>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
+            <div>
+                <h3>🔨 Built Using: 🔨</h3>
+                <ul style={{ textAlign: 'left', }}>
+                    <li className="li-space">
+                        <strong>React</strong> with <strong>Hooks</strong> for <strong>state management</strong> and <strong>dynamic user interface.</strong>
+                    </li>
+                    <li className="li-space">
+                        <strong>React Router</strong> for painless <strong>client-side routing</strong>.
+                    </li>
+                    <li className="li-space">
+                        <strong>Math.js</strong> to <strong>evaluate expressions</strong> instead of the <strong style={{ color: 'red' }}>dangerous</strong> <code>eval()</code> in JavaScript.
+                    </li>
+                </ul>
+                <h3>💻 Code Summary: 💻</h3>
+                <p style={{ textAlign: 'left', marginLeft: '50px', marginRight: '50px', lineHeight: '20px' }}>
+                    On each click event <code>handleClick(e)</code> will pass the value of the button clicked to <code>handleNewKey(newKeyValue)</code> to handle the value.
+                    There is a function to handle digits (0-9) <code>handleDigit(newKeyValue)</code>, operators (+, -, *, /, and =) <code>handleOperator(newKeyValue)</code>, and the other buttons on the calculator. 
+                    If the string is a valid expression then <code>Display.js</code> will format accordingly.
+                </p>
+            </div>
         </div>
     )
 };
