@@ -1,5 +1,5 @@
 <p align="center">
-  <div aligh="center">
+  <div align="center">
     <img src="./src/logo.svg" width="100" />
       <h1 align="center">
   React Calculator
