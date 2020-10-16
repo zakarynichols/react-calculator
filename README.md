@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://spdevuk.com">
-    <img alt="wave" src="./src/logo.svg" width="100" />
+  <a href="#">
+    <img src="./src/logo.svg" width="100" />
   </a>
   <h1 align="center">
   React Calculator
