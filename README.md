@@ -20,10 +20,6 @@ Front End Developer Calculator Challenge
 - ES6 Features like const, let, arrow functions, string interpolation, and destructuring. 
 - Easy and dependency free navigation bar with React's useRef() hook.
 
-## 📋 TODO
-
-- Implement Light/Dark mode. A busy work week and going up North for the weekend will be my excuse.
-
 ## 🚀 Dev setup
 
 - Install dependencies : `npm install`
