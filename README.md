@@ -1,10 +1,10 @@
 <p align="center">
-  <a href="#">
+  <div>
     <img src="./src/logo.svg" width="100" />
-  </a>
-  <h1 align="center">
+      <h1 align="center">
   React Calculator
 </h1>
+  </div>
 </p>
 
 
