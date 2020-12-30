@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/firefly-calc-test/static/css/main.f5eb035c.chunk.css",
-    "main.js": "/firefly-calc-test/static/js/main.5d158a17.chunk.js",
-    "main.js.map": "/firefly-calc-test/static/js/main.5d158a17.chunk.js.map",
-    "runtime-main.js": "/firefly-calc-test/static/js/runtime-main.4cc8f937.js",
-    "runtime-main.js.map": "/firefly-calc-test/static/js/runtime-main.4cc8f937.js.map",
-    "static/js/2.a15ac6bc.chunk.js": "/firefly-calc-test/static/js/2.a15ac6bc.chunk.js",
-    "static/js/2.a15ac6bc.chunk.js.map": "/firefly-calc-test/static/js/2.a15ac6bc.chunk.js.map",
-    "index.html": "/firefly-calc-test/index.html",
-    "precache-manifest.f2aba73c9ff1a7254869fab3cbe5c6d8.js": "/firefly-calc-test/precache-manifest.f2aba73c9ff1a7254869fab3cbe5c6d8.js",
-    "service-worker.js": "/firefly-calc-test/service-worker.js",
-    "static/css/main.f5eb035c.chunk.css.map": "/firefly-calc-test/static/css/main.f5eb035c.chunk.css.map",
-    "static/js/2.a15ac6bc.chunk.js.LICENSE.txt": "/firefly-calc-test/static/js/2.a15ac6bc.chunk.js.LICENSE.txt"
+    "main.css": "/react-calculator/static/css/main.f5eb035c.chunk.css",
+    "main.js": "/react-calculator/static/js/main.5d158a17.chunk.js",
+    "main.js.map": "/react-calculator/static/js/main.5d158a17.chunk.js.map",
+    "runtime-main.js": "/react-calculator/static/js/runtime-main.b85e388e.js",
+    "runtime-main.js.map": "/react-calculator/static/js/runtime-main.b85e388e.js.map",
+    "static/js/2.a15ac6bc.chunk.js": "/react-calculator/static/js/2.a15ac6bc.chunk.js",
+    "static/js/2.a15ac6bc.chunk.js.map": "/react-calculator/static/js/2.a15ac6bc.chunk.js.map",
+    "index.html": "/react-calculator/index.html",
+    "precache-manifest.57eb84c1ee54b7b9510a744607124738.js": "/react-calculator/precache-manifest.57eb84c1ee54b7b9510a744607124738.js",
+    "service-worker.js": "/react-calculator/service-worker.js",
+    "static/css/main.f5eb035c.chunk.css.map": "/react-calculator/static/css/main.f5eb035c.chunk.css.map",
+    "static/js/2.a15ac6bc.chunk.js.LICENSE.txt": "/react-calculator/static/js/2.a15ac6bc.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.4cc8f937.js",
+    "static/js/runtime-main.b85e388e.js",
     "static/js/2.a15ac6bc.chunk.js",
     "static/css/main.f5eb035c.chunk.css",
     "static/js/main.5d158a17.chunk.js"
